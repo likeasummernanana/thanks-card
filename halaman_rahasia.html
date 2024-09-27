@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Rahasia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff6347;
+        }
+
+        #secretMessage {
+            font-size: 2rem;
+            color: #333;
+            visibility: hidden;
+            margin-top: 30px;
+            transition: visibility 0.5s ease-in-out;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pesan Rahasia</h1>
+    <p>Klik tombol di bawah ini untuk melihat pesan rahasia!</p>
+
+    <button onclick="revealSecret()">Tampilkan Pesan</button>
+
+    <div id="secretMessage">🎉 Selamat! Anda telah menemukan pesan rahasia kami! 🎉</div>
+
+    <script>
+        function revealSecret() {
+            var secret = document.getElementById("secretMessage");
+            secret.style.visibility = "visible";
+        }
+    </script>
+
+</body>
+</html>
